@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1200.0" styleClass="backgroundAnchor" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Gui.SampleController">
+    <children>
+        <AnchorPane layoutY="-11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="sandwitchAnchor" stylesheets="@Stylesheet.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="sandwitchMenubutton" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#vBoxHandler" opacity="0.0" prefHeight="100.0" prefWidth="100.0" styleClass="sandwitchMenuButton" stylesheets="@Stylesheet.css" text="Button" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+        <VBox layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="100.0" styleClass="sandwitchVBox" stylesheets="@Stylesheet.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <children>
+                <AnchorPane fx:id="addBtnAnchor" prefHeight="200.0" prefWidth="200.0" styleClass="addAnchor" stylesheets="@Stylesheet.css">
+                    <children>
+                        <Button fx:id="addBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#addBtnHandler" opacity="0.0" prefHeight="100.0" prefWidth="100.0" styleClass="addButton" stylesheets="@Stylesheet.css" text="Button" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="removeBtnAnchor" prefHeight="200.0" prefWidth="200.0" styleClass="removeAnchor" stylesheets="@Stylesheet.css">
+                    <children>
+                        <Button fx:id="removeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#removeBtnHandler" opacity="0.0" prefHeight="100.0" prefWidth="100.0" styleClass="removeButton" stylesheets="@Stylesheet.css" text="Button" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="moveBtnAnchor" prefHeight="200.0" prefWidth="200.0" styleClass="moveAnchor" stylesheets="@Stylesheet.css">
+                    <children>
+                        <Button fx:id="moveButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#moveBtnHandler" opacity="0.0" prefHeight="100.0" prefWidth="100.0" styleClass="moveButton" stylesheets="@Stylesheet.css" text="Button" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <TextField fx:id="showRoomField" alignment="CENTER" editable="false" layoutX="466.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" styleClass="roomShowField" stylesheets="@Stylesheet.css" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="25.0" />
+        <AnchorPane layoutX="880.0" layoutY="170.0" prefHeight="526.0" prefWidth="200.0" styleClass="sandwitchMenuButton" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="33.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+        <AnchorPane fx:id="infoBoxHandler" layoutX="880.0" layoutY="170.0" prefHeight="526.0" prefWidth="200.0" styleClass="infoBoxAnchor" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TextArea fx:id="infoText" editable="false" layoutX="28.0" prefHeight="240.0" prefWidth="200.0" styleClass="infoBoxTextArea" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="282.0" AnchorPane.rightAnchor="10.0" />
+            <TextArea fx:id="boxInfo" layoutY="296.0" prefHeight="250.0" prefWidth="200.0" styleClass="infoBoxSchublade" stylesheets="@Stylesheet.css" />
+            <Label layoutX="5.0" layoutY="266.0" prefHeight="32.0" prefWidth="200.0" styleClass="schubladeLabel" stylesheets="@Stylesheet.css" text="Partitur Informationen:" />
+            <Label layoutY="-5.0" prefHeight="32.0" prefWidth="200.0" styleClass="raumLabel" stylesheets="@Stylesheet.css" text="Raum Informationen:" />
+            </children>
+        </AnchorPane>
+        <Slider fx:id="containerSlider" layoutX="222.0" layoutY="658.0" onMouseDragged="#scrollHandler" prefHeight="14.0" prefWidth="445.0" styleClass="scrollBar" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="270.0" />
+        <AnchorPane layoutX="428.0" layoutY="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="caretleftAnchor" stylesheets="@Stylesheet.css" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <Button fx:id="leftBtn" mnemonicParsing="false" onMouseClicked="#leftRoom" opacity="0.0" styleClass="caretleftButton" stylesheets="@Stylesheet.css" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="628.0" layoutY="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="caretrightAnchor" stylesheets="@Stylesheet.css" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Button fx:id="rightRoomBtn" layoutX="-13.0" mnemonicParsing="false" onMouseClicked="#rightRoom" opacity="0.0" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="173.0" styleClass="celf" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="15.0" />
+        <AnchorPane fx:id="midContainer" layoutX="220.0" layoutY="80.0" opacity="0.36" prefHeight="480.0" prefWidth="710.0" styleClass="midContainer" stylesheets="@Stylesheet.css" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="80.0" />
+      <TextField fx:id="searchField" layoutX="990.0" layoutY="25.0" onKeyPressed="#searchKey" styleClass="search-box" stylesheets="@Stylesheet.css" />
+      <AnchorPane layoutX="1139.0" layoutY="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="searchAnchor" stylesheets="@Stylesheet.css">
+         <children>
+            <Button layoutX="-13.0" mnemonicParsing="false" onMouseClicked="#searchMouse" opacity="0.0" text="Button" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

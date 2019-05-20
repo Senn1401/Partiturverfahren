@@ -1,0 +1,89 @@
+.sandwitchAnchor{
+    -fx-background-image: url("Icons/sandwichmenu.png");
+}
+
+.addAnchor{
+    -fx-background-image: url("Icons/plus.png");
+    -fx-background-radius: 60;
+    -fx-background-position: center;
+}
+
+.removeAnchor{
+    -fx-background-image: url("Icons/minus.png");
+}
+
+.moveAnchor{
+    -fx-background-image: url("Icons/move_Icon.png");
+}
+
+
+.addButton{
+    -fx-background-radius: 6;
+}
+
+.scrollBar > .track {
+    -fx-background-color: rgba(155,27,48,.7);
+}
+
+.scrollBar > .thumb {
+    -fx-background-color: white;
+}
+
+.scrollBar{
+    -fx-background-color: white;
+}
+
+.scrollBar > .animated-thumb {
+    -fx-background-color: white;
+}
+
+.caretleftAnchor{
+    -fx-background-image: url("Icons/left.png");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 10;
+}
+
+.caretrightAnchor{
+    -fx-background-image: url("Icons/right.png");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 10;
+}
+
+
+.search-box .text-field:focused {
+    -fx-background-color: -fx-focus-color, white;
+    -fx-background-insets: -1.4, 1;
+    -fx-background-radius: 14.4;
+}
+
+.backgroundAnchor{
+    -fx-background-color: linear-gradient(to left, #aa1111 90% , #000000);
+}
+.celf{
+    -fx-background-image: url("Icons/notenS_IconWhite.png");
+}
+
+.midContainer{
+    -fx-background-image: url("Icons/nodes.png");
+    -fx-alignment: center;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.searchAnchor{
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url("Icons/searc.png");
+    -fx-background-radius: 10;
+}
+
+.raumLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+.schubladeLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}

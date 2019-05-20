@@ -1,0 +1,43 @@
+.pane{
+    -fx-background-color: #EBEBEB;
+}
+
+
+.searchBtn{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.cancelBtn{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.fromLabel{
+    -fx-text-fill: #000000;
+    -fx-font-size: 17px;
+}
+
+.toLabel{
+    -fx-text-fill: #000000;
+    -fx-font-size: 17px;
+}
+
+.comboBox{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+
+.newTextField{
+    -fx-background-color: white;
+}
+
+.infoArea{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-background-radius: 15;
+}

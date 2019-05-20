@@ -1,0 +1,77 @@
+.pane{
+    -fx-background-color: #EBEBEB;
+}
+.cancleBtn{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+.addBtn{
+     -fx-background-color: rgb(64,64,64);
+     -fx-background-radius: 15;
+     -fx-text-fill: white;
+     -fx-font-size: 18px;
+}
+.comboBox{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+.searchField{
+    -fx-opacity: 1;
+}
+.search{
+    -fx-background-color: white;
+}
+.location{
+    -fx-text-fill: white;
+    -fx-font-family: New-Roman-Times;
+}
+.Raum{
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.Schublade{
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.Fach{
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.Noten{
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.typeName{
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.ueberprufen{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.raumLabel{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.schubladeLabel{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-family: New-Roman-Times;
+}
+
+.infoBoxSchublade{
+
+}
+

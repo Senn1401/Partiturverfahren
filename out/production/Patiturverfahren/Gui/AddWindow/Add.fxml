@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" styleClass="pane" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddWindow.AddControler">
+   <children>
+      <Button fx:id="cancleBtn" layoutX="386.0" layoutY="318.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="50.0" prefWidth="150.0" styleClass="cancleBtn" stylesheets="@StyleSheet.css" text="Abbrechen" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="100.0" />
+      <Button fx:id="addBtn" layoutX="132.0" layoutY="311.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#add" prefHeight="50.0" prefWidth="131.0" styleClass="addBtn" stylesheets="@StyleSheet.css" text="Hinzufügen" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="100.0" />
+      <Label fx:id="Raum" layoutX="28.0" layoutY="22.0" prefHeight="27.0" prefWidth="42.0" styleClass="Raum" stylesheets="@StyleSheet.css" text="Raum" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="22.0" />
+      <ComboBox fx:id="comboBox" layoutX="350.0" layoutY="23.0" onAction="#comboBoxChange" prefWidth="150.0" styleClass="comboBox" stylesheets="@StyleSheet.css" AnchorPane.bottomAnchor="252.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="23.0" />
+      <Label layoutX="308.0" layoutY="22.0" prefHeight="27.0" prefWidth="42.0" styleClass="typeName" stylesheets="@StyleSheet.css" text="Typ" AnchorPane.bottomAnchor="251.0" AnchorPane.topAnchor="22.0" />
+      <TextField fx:id="RaumField" layoutX="96.0" layoutY="23.0" prefHeight="25.0" prefWidth="161.0" styleClass="RaumField" stylesheets="@StyleSheet.css" />
+      <Label fx:id="Schublade" layoutX="28.0" layoutY="56.0" prefHeight="27.0" prefWidth="68.0" styleClass="Schublade" stylesheets="@StyleSheet.css" text="Schublade" visible="false" />
+      <TextField fx:id="SchubladeField" layoutX="96.0" layoutY="57.0" prefHeight="25.0" prefWidth="161.0" styleClass="SchubladeField" stylesheets="@StyleSheet.css" visible="false" />
+      <Label fx:id="Fach" layoutX="28.0" layoutY="93.0" prefHeight="27.0" prefWidth="42.0" styleClass="Fach" stylesheets="@StyleSheet.css" text="Fach" visible="false" />
+      <TextField fx:id="FachField" layoutX="96.0" layoutY="94.0" prefHeight="25.0" prefWidth="161.0" styleClass="FachField" stylesheets="@StyleSheet.css" visible="false" />
+      <Label fx:id="Komponist" layoutX="28.0" layoutY="132.0" prefHeight="27.0" prefWidth="61.0" styleClass="Noten" stylesheets="@StyleSheet.css" text="Komponist" visible="false" />
+      <TextField fx:id="KomponistField" layoutX="96.0" layoutY="133.0" prefHeight="25.0" prefWidth="161.0" styleClass="NotenField" stylesheets="@StyleSheet.css" visible="false" />
+      <TextField fx:id="TitelField" layoutX="96.0" layoutY="169.0" prefHeight="25.0" prefWidth="161.0" styleClass="NotenField" stylesheets="@StyleSheet.css" visible="false" />
+      <Label fx:id="Titel" layoutX="28.0" layoutY="168.0" prefHeight="27.0" prefWidth="42.0" styleClass="Noten" stylesheets="@StyleSheet.css" text="Titel" visible="false" />
+      <TextArea fx:id="infoArea" layoutX="351.0" layoutY="61.0" prefHeight="83.0" prefWidth="144.0" styleClass="infoArea" stylesheets="@StyleSheet.css" text="" />
+      <Button layoutX="350.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#addToDb" prefHeight="50.0" prefWidth="144.0" styleClass="ueberprufen" stylesheets="@StyleSheet.css" text="Überprüfen" />
+   </children>
+</AnchorPane>

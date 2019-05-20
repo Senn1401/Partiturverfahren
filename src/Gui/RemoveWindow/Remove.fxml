@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="removeAnchor" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.RemoveWindow.RemoveController">
+   <children>
+      <Button fx:id="cancleBtn" layoutX="70.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#remove" prefHeight="38.0" prefWidth="106.0" styleClass="cancelBtn" stylesheets="@StyleSheet.css" text="Löschen" />
+      <Button fx:id="removeBtn" layoutX="247.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="38.0" prefWidth="106.0" styleClass="removeBtn" stylesheets="@StyleSheet.css" text="Abbrechen" />
+      <TextField fx:id="searchField" layoutX="44.0" layoutY="59.0" onKeyPressed="#selectKey" prefHeight="25.0" prefWidth="334.0" styleClass="searchField" stylesheets="@StyleSheet.css" />
+      <TextArea fx:id="infoArea" layoutX="403.0" layoutY="31.0" prefHeight="170.0" prefWidth="200.0" styleClass="infoArea" stylesheets="@StyleSheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="488.0" layoutY="4.0" prefHeight="25.0" prefWidth="54.0" styleClass="infoAreaLabel" stylesheets="@StyleSheet.css" text="Infos" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="4.0" />
+      <Label layoutX="44.0" layoutY="34.0" prefHeight="25.0" prefWidth="334.0" styleClass="searchFieldLabel" stylesheets="@StyleSheet.css" text="Partiturname eingeben:" />
+   </children>
+</AnchorPane>

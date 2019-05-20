@@ -1,0 +1,37 @@
+.removeAnchor{
+    -fx-background-color: #EBEBEB;
+}
+
+.cancelBtn{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.removeBtn{
+    -fx-background-color: rgb(64,64,64);
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+}
+
+.searchField{
+    -fx-background-color: white;
+}
+
+.infoAreaLabel{
+    -fx-text-fill: #000000;
+    -fx-font-size: 17px;
+}
+
+.infoArea{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-background-radius: 15;
+}
+
+.searchFieldLabel{
+    -fx-text-fill: #000000;
+    -fx-font-size: 17px;
+}
